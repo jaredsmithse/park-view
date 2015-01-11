@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Park Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="park_view" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ParkMapViewController" customModule="park_view" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -29,6 +29,9 @@
                                                 <segment title="Hybrid"/>
                                                 <segment title="Satellite"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="mapTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y0Z-Nq-d4f"/>
+                                            </connections>
                                         </segmentedControl>
                                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="SMb-fC-uvN">
                                             <connections>

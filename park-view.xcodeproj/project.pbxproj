@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBD2CF601A6212490040A748 /* MapOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2CF5F1A6212490040A748 /* MapOptionsViewController.swift */; };
 		EBF610301A5E34A70011E950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF6102F1A5E34A70011E950 /* AppDelegate.swift */; };
-		EBF610321A5E34A70011E950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF610311A5E34A70011E950 /* ViewController.swift */; };
+		EBF610321A5E34A70011E950 /* ParkMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF610311A5E34A70011E950 /* ParkMapViewController.swift */; };
 		EBF610351A5E34A70011E950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF610331A5E34A70011E950 /* Main.storyboard */; };
 		EBF610371A5E34A70011E950 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF610361A5E34A70011E950 /* Images.xcassets */; };
 		EBF6103A1A5E34A70011E950 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF610381A5E34A70011E950 /* LaunchScreen.xib */; };
@@ -26,10 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EBD2CF5F1A6212490040A748 /* MapOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsViewController.swift; sourceTree = "<group>"; };
 		EBF6102A1A5E34A70011E950 /* park-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "park-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF6102E1A5E34A70011E950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBF6102F1A5E34A70011E950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBF610311A5E34A70011E950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBF610311A5E34A70011E950 /* ParkMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapViewController.swift; sourceTree = "<group>"; };
 		EBF610341A5E34A70011E950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBF610361A5E34A70011E950 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBF610391A5E34A70011E950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				EBF6102F1A5E34A70011E950 /* AppDelegate.swift */,
-				EBF610311A5E34A70011E950 /* ViewController.swift */,
+				EBD2CF5F1A6212490040A748 /* MapOptionsViewController.swift */,
+				EBF610311A5E34A70011E950 /* ParkMapViewController.swift */,
 				EBF610331A5E34A70011E950 /* Main.storyboard */,
 				EBF610361A5E34A70011E950 /* Images.xcassets */,
 				EBF610381A5E34A70011E950 /* LaunchScreen.xib */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF610321A5E34A70011E950 /* ViewController.swift in Sources */,
+				EBF610321A5E34A70011E950 /* ParkMapViewController.swift in Sources */,
+				EBD2CF601A6212490040A748 /* MapOptionsViewController.swift in Sources */,
 				EBF610301A5E34A70011E950 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +411,7 @@
 				EBF6104B1A5E34A70011E950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBF6104C1A5E34A70011E950 /* Build configuration list for PBXNativeTarget "park-viewTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				EBF6104E1A5E34A70011E950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
