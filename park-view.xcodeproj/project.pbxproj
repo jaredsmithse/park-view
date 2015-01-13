@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		EBD2CF5F1A6212490040A748 /* MapOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsViewController.swift; sourceTree = "<group>"; };
+		EBD2CF611A621DAE0040A748 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		EBF6102A1A5E34A70011E950 /* park-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "park-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF6102E1A5E34A70011E950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBF6102F1A5E34A70011E950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 			children = (
 				EBF6102F1A5E34A70011E950 /* AppDelegate.swift */,
 				EBD2CF5F1A6212490040A748 /* MapOptionsViewController.swift */,
+				EBD2CF611A621DAE0040A748 /* MyPlayground.playground */,
 				EBF610311A5E34A70011E950 /* ParkMapViewController.swift */,
 				EBF610331A5E34A70011E950 /* Main.storyboard */,
 				EBF610361A5E34A70011E950 /* Images.xcassets */,

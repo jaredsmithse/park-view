@@ -10,7 +10,7 @@ import UIKit
 
 class ParkMapViewController: UIViewController {
     
-    var selectedOptions:[Int] = []
+    var selectedOptions:NSMutableArray = []
     
     @IBAction func mapTypeChanged(sender: AnyObject) {
         //to be implemented
