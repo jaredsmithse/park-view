@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
@@ -9,8 +10,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ParkMapViewController" customModule="park_view" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Rj0-JV-ovP"/>
+                        <viewControllerLayoutGuide type="bottom" id="XDB-nu-obi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -41,21 +42,24 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Zk-d5-eaM">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225" y="437"/>
+            <point key="canvasLocation" x="224" y="436"/>
         </scene>
         <!--Map Options View Controller-->
         <scene sceneID="nR8-zY-MKv">
             <objects>
-                <viewController title="Map Options View Controller" id="yjJ-QR-XDK" sceneMemberID="viewController">
+                <viewController title="Map Options View Controller" id="yjJ-QR-XDK" customClass="MapOptionsViewController" customModule="park_view" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KJp-85-Ljz"/>
-                        <viewControllerLayoutGuide type="bottom" id="APG-1l-lai"/>
+                        <viewControllerLayoutGuide type="top" id="Ua2-xM-yPE"/>
+                        <viewControllerLayoutGuide type="bottom" id="O8x-HP-Vqu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yOr-Qt-Zed">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -65,7 +69,7 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="n9T-YN-xoV">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OptionCell" id="n9T-YN-xoV">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n9T-YN-xoV" id="07L-YO-K1C">
@@ -86,7 +90,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Select Options" id="aih-P7-H0x">
-                                        <barButtonItem key="leftBarButtonItem" title="Done" id="D5l-IJ-hRh"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Done" id="D5l-IJ-hRh">
+                                            <connections>
+                                                <segue destination="JAJ-Lr-gQI" kind="unwind" unwindAction="closeOptions:" id="J4J-M2-csi"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -95,6 +103,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y25-Xp-uy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JAJ-Lr-gQI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="740" y="437"/>
         </scene>

@@ -22,14 +22,17 @@ class MapOptionsViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1;
+        return 5;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        println("we have something here")
         var cell: UITableViewCell = tableView.dequeueReusableHeaderFooterViewWithIdentifier("OptionCell") as UITableViewCell
+        println("we have something here")
         var selectedRow = PVMapOption(rawValue: indexPath.row)
         switch selectedRow! {
             case PVMapOption.PVMapBoundary:
+                println("we have something here")
                 cell.textLabel?.text = "Park Boundary"
             case PVMapOption.PVMapOverlay:
                 cell.textLabel?.text = "Map Overlay"
